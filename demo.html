@@ -14,7 +14,7 @@
   <body>
     <div id="root">
       <form id="input-form">
-        <input name="text" placeholder="new word" />
+        <input  name="text" placeholder="new word" />
         <input type="button" value="add" />
         <input type="button" value="remove" />
       </form>
@@ -33,7 +33,7 @@
     </div>
 
     <script>
-      const isWord = (a = '') => /^[a-zA-Z]+$/.test(a),
+      const isWord = (a = '') => /^[a-zA-Z-1-9]+$/.test(a),
         sortStrings = (a = [], b = 'oldest') => {
           let c;
           return (
